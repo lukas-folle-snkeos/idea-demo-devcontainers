@@ -6,6 +6,11 @@
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
-	"remoteUser": "testuser"
+
+	"remoteUser": "testuser",
+	"runArgs": [
+    "--gpus", "all",
+	"--env-file", ".devcontainer/test.env"
+  ]
 }
 
